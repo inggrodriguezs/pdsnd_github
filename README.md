@@ -25,5 +25,22 @@ Those are the files used:
 
 I've developed that project by my own, using the videos, and the knowledge provided by Udacity as part of the nanodegree Programming for Datascience with Python, also we use the templated provided along that couse as part of the final project.
 
+I've already use some webpages in order to improve my coding.
+
+https://www.kite.com/python/answers/how-to-convert-seconds-to-days,-hours,-and-minutes-in-python
+
+    # Time delta: code used: 
+    # https://www.kite.com/python/answers/how-to-convert-seconds-to-days,-hours,-and-minutes-in-python
+    seconds = total_travel_time
+    seconds_in_day = 60 * 60 * 24
+    seconds_in_hour = 60 * 60
+    seconds_in_minute = 60
+
+    days = seconds // seconds_in_day
+    hours = (seconds - (days * seconds_in_day)) // seconds_in_hour
+    minutes = (seconds - (days * seconds_in_day) - (hours * seconds_in_hour)) // seconds_in_minute
+    
+    print('The total travel time was: {} days, {} hours, {} minutes'.format(days, hours, minutes))
+
 Thanks Udacity and their team, i've learn too much. 
 
