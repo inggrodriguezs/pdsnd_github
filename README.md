@@ -21,3 +21,9 @@ Those are the files used:
 -new_york_city.csv
 -washington.csv
 
+### Credits
+
+I've developed that project by my own, using the videos, and the knowledge provided by Udacity as part of the nanodegree Programming for Datascience with Python, also we use the templated provided along that couse as part of the final project.
+
+Thanks Udacity and their team, i've learn too much. 
+
