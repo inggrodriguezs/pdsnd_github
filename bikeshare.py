@@ -64,19 +64,12 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
       try:
-        # day = str(input("Which day do you want to filter: \n Insert the name of the day: \n All\n Monday\n Tuesday\n Wednesday\n Thursday\n Friday\n Saturday\n Sunday\n"))
-        # day = day.lower()
-        # days = ['all','monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+        day = str(input("Which day do you want to filter: \n Insert the name of the day: \n All\n Monday\n Tuesday\n Wednesday\n Thursday\n Friday\n Saturday\n Sunday\n"))
+        day = day.lower()
+        days = ['all','monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
         
-        # LInk used to improve my code, it´s another way to improve 
-        # https://stackoverflow.com/questions/50192965/python-how-to-make-user-input-not-case-sensitive
-        
-        day = days.index(input('\nWhich day do you want to filter: \n Insert the name of the day: \n All\n Monday\n Tuesday\n Wednesday\n Thursday\n Friday\n Saturday\n Sunday\n').lower().title())
-        
-        #if day in days:
-        #    break
-        break
-        
+        if day in days:
+            break
         else: 
             print('You must type a correct day, please enter again:')    
       except ValueError as ve:
@@ -270,18 +263,6 @@ def user_stats(df):
 
 
 def main():
-    # while True:
-        # try:
-            # while df.index 
-           
-            # raw_data = input('\nWould you like to view individual raw data? Enter yes or no.\n')
-            # if raw_data.lower() != 'yes':
-                # break
-        # # except KeyboardInterrupt as k:
-            # # print('A Keyborad exception has occurred: {}'.format(k))
-        # except Exception as e:
-            # print('An exception has occurred: {}'.format(e))
-
     while True:
         try:
             city, month, day = get_filters()
@@ -295,8 +276,6 @@ def main():
             restart = input('\nWould you like to restart? Enter yes or no.\n')
             if restart.lower() != 'yes':
                 break
-        # except KeyboardInterrupt as k:
-            # print('A Keyborad exception has occurred: {}'.format(k))
         except Exception as e:
             print('An exception has occurred: {}'.format(e))
 
